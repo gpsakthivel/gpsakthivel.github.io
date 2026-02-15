@@ -1,0 +1,21 @@
+<section class="hero">
+  <div class="hero-content">
+    <h1>Hi, I'm <span class="highlight">Sakthivel P</span></h1>
+    <p class="tagline">Full Stack Developer | 5.2 Years Experience</p>
+    <p class="description">Passionate full stack developer with expertise in building enterprise-grade web and desktop applications using Angular, Spring Boot, and .NET.</p>
+    
+    <div class="cta-buttons">
+      <a href="#projects" class="btn btn-primary">View Projects</a>
+      <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+    </div>
+
+    <div class="tech-stack">
+      <h3>Tech Stack</h3>
+      <div class="tech-items">
+        <div *ngFor="let tech of techStack" class="tech-item">
+          <span>{{ tech }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

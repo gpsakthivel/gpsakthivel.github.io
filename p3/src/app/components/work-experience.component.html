@@ -1,0 +1,39 @@
+<section class="work-experience">
+  <div class="container">
+    <div class="section-header">
+      <h2>Work Experience</h2>
+      <p>A journey through my professional career and key achievements</p>
+    </div>
+
+    <div class="timeline">
+      <div *ngFor="let exp of experiences" class="timeline-item" [attr.data-index]="exp.id">
+        <div class="timeline-dot"></div>
+        
+        <div class="timeline-content">
+          <div class="exp-header">
+            <div>
+              <h3>{{ exp.position }}</h3>
+              <div class="company-info">
+                <span class="company">{{ exp.company }}</span>
+                <span class="location">{{ exp.location }}</span>
+              </div>
+            </div>
+            <span class="period">{{ exp.period }}</span>
+          </div>
+
+          <p class="description">{{ exp.description }}</p>
+
+          <ul class="responsibilities">
+            <li *ngFor="let resp of exp.responsibilities">
+              <span class="bullet">▸</span>{{ resp }}
+            </li>
+          </ul>
+
+          <div class="skills">
+            <span *ngFor="let skill of exp.skills" class="skill-tag">{{ skill }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

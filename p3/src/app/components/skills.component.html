@@ -1,0 +1,34 @@
+<section class="skills">
+  <div class="container">
+    <div class="section-header">
+      <h2>Technical Proficiency</h2>
+      <p>A comprehensive overview of my technical expertise across various development domains and tools.</p>
+    </div>
+
+    <div class="skills-grid">
+      <div *ngFor="let category of skillCategories" class="skill-category">
+        <div class="category-header">
+          <h3>{{ category.title }}</h3>
+          <p>{{ category.subtitle }}</p>
+        </div>
+
+        <div class="skills-list">
+          <div *ngFor="let skill of category.skills" class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">
+                {{ skill.name }}
+                <span *ngIf="skill.isHot" class="hot-badge">Hot</span>
+              </span>
+              <span class="proficiency" [attr.data-level]="skill.proficiency.toLowerCase()">
+                {{ skill.proficiency }}
+              </span>
+            </div>
+            <div class="skill-bar">
+              <div class="skill-progress" [attr.data-level]="skill.proficiency.toLowerCase()"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

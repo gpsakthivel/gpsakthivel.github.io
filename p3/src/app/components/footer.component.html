@@ -1,0 +1,39 @@
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-section">
+        <h3>Get In Touch</h3>
+        <p>I'm always interested in hearing about new projects and opportunities.</p>
+        <a href="mailto:your.email@example.com" class="contact-btn">Send an Email</a>
+      </div>
+
+      <div class="footer-section">
+        <h3>Quick Links</h3>
+        <nav class="footer-nav">
+          <a href="#projects">Projects</a>
+          <a href="#experience">Experience</a>
+          <a href="#skills">Skills</a>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+
+      <div class="footer-section">
+        <h3>Follow</h3>
+        <div class="social-links">
+          <a *ngFor="let link of socialLinks" 
+             [href]="link.url" 
+             target="_blank" 
+             rel="noopener noreferrer"
+             class="social-link"
+             [title]="link.name">
+            {{ link.name }}
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© {{ currentYear }} Sakthivel • All rights reserved • Made with <span class="heart">❤</span> Sakthivel</p>
+    </div>
+  </div>
+</footer>
