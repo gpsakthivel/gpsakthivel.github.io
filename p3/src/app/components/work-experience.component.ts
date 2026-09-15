@@ -23,9 +23,23 @@ export class WorkExperienceComponent {
   experiences: WorkExperience[] = [
     {
       id: 1,
+      position: 'Software Engineer II',
+      company: 'Deloitte Consulting India Pvt Ltd',
+      period: 'Aug 2025 - Present',
+      location: 'Chennai, India',
+      description: 'Developed enterprise-grade solutions including new development and migration projects.',
+      responsibilities: [
+        'Worked on the Life Science application using Angular 22 with the given Figma UI/UX designs',
+        'Led Angular version migrations (v12-v22) across xprof application',
+        'Worked on the GM2 to GM3 migration of the xprof application with Google Material 3 components and theming',
+      ],
+      skills: ['Angular 19-22', 'AWS S3', 'RESTful APIs', 'Google Material 2', 'Google Material 3']
+    },
+    {
+      id: 2,
       position: 'Software Analyst',
       company: 'Agilysys Technologies India Pvt Ltd',
-      period: 'Jun 2022 - Present',
+      period: 'Jun 2022 - Aug 2025',
       location: 'Chennai, India',
       description: 'Developed enterprise-grade solutions including Express Kiosk modernization and unified booking engine.',
       responsibilities: [
@@ -39,7 +53,7 @@ export class WorkExperienceComponent {
       skills: ['Angular 14-19', 'Spring Boot', '.NET Core', 'Electron.js', 'Azure Blob Storage', 'RESTful APIs']
     },
     {
-      id: 2,
+      id: 3,
       position: 'Software Engineer',
       company: 'Syncfusion Software Pvt Ltd',
       period: 'Dec 2020 - Jun 2022',
