@@ -1,10 +1,10 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { HeroComponent } from './components/hero.component';
-import { WorkExperienceComponent } from './components/work-experience.component';
-import { ProjectsComponent } from './components/projects.component';
-import { SkillsComponent } from './components/skills.component';
-import { FooterComponent } from './components/footer.component';
+import { HeroComponent } from './components/hero/hero.component';
+import { WorkExperienceComponent } from './components/work-experience/work-experience.component';
+import { ProjectsComponent } from './components/projects/projects.component';
+import { SkillsComponent } from './components/skills/skills.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @Component({
   selector: 'app-root',
